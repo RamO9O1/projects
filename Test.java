@@ -10,6 +10,7 @@ public class Test {
 
     public static int findNumOfStepsRequired(int patient_no, int steps_by_p1) {
 
+        System.out.print("Jiii");
         return patient_no * steps_by_p1;
 
     }
