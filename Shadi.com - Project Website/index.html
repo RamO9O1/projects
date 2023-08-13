@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/index.css" />
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .abs {
+      position: absolute;
+    }
+
+    .head {
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      display: flex;
+      left: 204px;
+      top: 51px;
+      right: 210px;
+    }
+
+    .logo span {
+      /* align-self: flex-end; */
+      position: relative;
+      display: inline-block;
+      font-size: large;
+      margin-bottom: 4px;
+    }
+
+    span a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .none {
+      margin-left: 8px;
+    }
+
+    span a:hover {
+      text-decoration: underline;
+    }
+
+    .none:hover {
+      text-decoration: underline;
+    }
+
+    .loginspace {
+      margin-left: 700px;
+      color: whitesmoke;
+    }
+
+    .imgtop {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    .tagline {
+      position: absolute;
+      top: 315px;
+      left: 195px;
+      color: azure;
+      font-size: 35px;
+      text-align: center;
+    }
+
+    .form01 {
+      position: absolute;
+      bottom: 52px;
+      right: 89px;
+      background-color: rgba(0, 0, 0, 0.315);
+    }
+
+    .form01 div {
+      color: white;
+      font-size: larger;
+      padding: 11px 13px 19px 9px;
+      display: inline-block;
+    }
+
+    select {
+      padding: 4px 87px 3px 12px;
+      color: grey;
+      background-color: white;
+      border: 2px solid white;
+      border-radius: 1mm;
+    }
+
+    .button01 {
+      padding: 5px 40px 6px 39px;
+      border: 1px solid #47bfdd;
+      border-radius: 1mm;
+      color: white;
+      background-color: #47bfdd;
+      font-size: large;
+      font-weight: bold;
+    }
+
+    .button01:hover {
+      color: wheat;
+      background-color: #0e819e;
+    }
+
+    .linestop {
+      color: #ff5a60;
+      text-align: center;
+      font-family: sans-serif !important;
+      margin-top: 40px;
+      font-size: 35px;
+      font-weight: 500;
+      margin-bottom: 57px;
+    }
+
+    .body01 {
+      position: relative;
+    }
+
+    .body01 .span01 {
+      margin-left: 300px;
+      display: inline-block;
+    }
+
+    .arshadilogo {
+      margin-right: 251px;
+      margin-left: 46px;
+      padding-left: 0 px;
+    }
+
+    .bodylines02 {
+      font-size: 22px;
+      top: 200px;
+      right: 344px;
+    }
+
+    .bodylines02>span {
+      margin-left: 55px;
+    }
+
+    .bodylines02valiable {
+      font-size: 18px;
+      top: -10px;
+      left: 16px;
+      margin-top: 134px;
+    }
+
+    .bodylines03 {
+      position: absolute;
+      top: 40px;
+      color: #ff5a60;
+      margin-top: 30px;
+    }
+
+    .playstore {
+      position: absolute;
+      top: 165px;
+      left: -14px;
+    }
+
+    .logofind {
+      padding-top: 60px;
+    }
+
+    .body02 {
+      background-color: #f1f1f2;
+    }
+
+    .body02span {
+      display: inline-block;
+      padding: 36px 17px 102px 48px;
+      text-align: center;
+    }
+
+    /* .image-container:first-child{
+        position: relative;
+        
+      }
+      #imghover{
+        position: absolute;
+        z-index: -2;
+        margin-top: -140px;
+      }
+      .image-container:first-child:hover  {
+        display: none;
+        z-index: -2;
+      }
+
+      .image-container:last-child:hover  {
+        z-index: 2;
+      } */
+    .img {
+      position: relative;
+      z-index: 2;
+    }
+
+    .img:hover {
+      padding: 100px 100PX;
+      z-index: -2;
+    }
+
+    .hover01 {
+      position: absolute;
+      margin-left: -135px;
+      padding: 1px;
+    }
+
+    .hover01:hover {
+      z-index: 25;
+    }
+
+    .logovlaue {
+      color: #2fc7db;
+      text-align: center;
+      font-size: 28px;
+    }
+
+    .logocontent {
+      color: grey;
+      font-size: 20px;
+    }
+
+    .couple>span {
+      box-sizing: border-box;
+      display: inline-block;
+      height: 310px;
+      width: 267px;
+      text-align: justify;
+      margin-left: 146px;
+      margin-bottom: 130px;
+    }
+
+    .couplemove {
+      position: relative;
+      top: 17px;
+    }
+
+    .couple>span:hover {
+      box-shadow: 2px 2px 41px 3px grey;
+    }
+
+    .couplename {
+      color: #474555;
+      text-align: start;
+    }
+
+    .couplecontent {
+      color: #5e5d63;
+      text-align: l;
+    }
+
+    .started {
+      background-color: #ff5a60;
+      color: white;
+      padding: 30px 0px 25px 0px;
+    }
+
+    .started:first-child {
+      display: flex;
+      gap: 100px;
+      padding-top: 38px;
+      font-size: 25px;
+    }
+
+    .started:first-child p {
+      padding-top: 12px;
+    }
+
+    .started:last-child {
+      display: flex;
+
+      padding-left: 400px;
+
+    }
+
+    .started:last-child button {
+      color: white;
+      background-color: #ff5a60;
+      border: 1px solid white;
+      border-radius: 0.8mm;
+      padding: 19px 50px 18px 52px;
+      font-size: large;
+    }
+
+    .started:last-child button:hover {
+      border: 0px solid white;
+      background-color: white;
+      color: #0e819e;
+    }
+
+    #arx {
+      position: relative;
+      display: inline-block;
+    }
+
+    #arx>div>p {
+      margin-bottom: 25px;
+      padding-top: 25px;
+      padding-left: 412px;
+      font-size: 40px;
+      color: #ff5a60;
+    }
+
+    .box {
+      display: inline-block;
+      padding: 20px;
+      margin-left: 10px;
+
+    }
+
+    .box>p {
+      text-align: center;
+      color: #5e5d63;
+    }
+
+    .box>.line01 {
+      font-size: large;
+      color: #262527;
+    }
+
+    .space01 {
+      padding-bottom: 30px;
+      color: #75747a;
+    }
+
+    .inblok01 {
+      position: relative;
+      top: 18px;
+      margin-left: 155px;
+
+    }
+
+    .inblok02 {
+      position: relative;
+      top: 36px;
+
+    }
+
+    .others {
+      margin-top: 80px;
+      display: inline-block;
+      margin-left: 500px;
+    }
+
+    .others>p {
+
+      color: #5e5d63;
+      text-align: center;
+    }
+
+    .others>.lineextr {
+      font-size: large;
+      color: black;
+
+    }
+
+    .ar2 {
+      padding: 20px 0px 30px 436px;
+      background-color: #c9c5c556;
+      margin-top: 80px;
+      margin-bottom: 50px;
+      display: block;
+      color: #ff5a60;
+      font-size: 25px;
+      font-weight: bold;
+
+    }
+
+    .playstore02 {
+      padding-top: 10px;
+      margin-left: 20px;
+    }
+
+    .ar03 {
+      padding-top: 140px;
+    }
+
+    .ar03>p {
+      color: #72727d;
+      font-family: Roboto, sans-serif;
+      margin-left: 130px;
+      margin-right: 130px;
+      font-size: 14px;
+      font-weight: 400;
+      text-align: justify;
+    }
+
+    .ar03>img {
+      margin-bottom: 60px;
+      margin-left: 645px;
+    }
+
+    .learn {
+      color: #00bcd5;
+      position: relative;
+      top: 8px;
+      text-decoration: none;
+    }
+
+    .learn:hover {
+
+      text-decoration: underline;
+    }
+
+    .country {
+      margin-top: 60px;
+      margin-left: 445px;
+      margin-bottom: 50px;
+      display: inline-block;
+    }
+
+    .country>div>a {
+      color: #00bcd5;
+      text-decoration: none;
+    }
+
+    .country>div {
+      display: inline-block;
+    }
+
+    .country>div>a:hover {
+      font-size: 14px;
+      text-decoration: underline;
+    }
+
+    .trust {
+      color: white;
+      background-color: #00bcd5;
+      border-radius: 3px 3px 0 0;
+      display: inline-block;
+      font-size: 20px;
+      padding: 10px 12px 10px 12px;
+      position: absolute;
+      left: 600px;
+    }
+
+    .best {
+      position: relative;
+      display: inline-block;
+      top: 43px;
+      padding-left: 70px;
+      padding-right: 70px;
+      margin-left: 308px;
+      margin-bottom: 100px;
+      border-top: 2px solid #dfe0e3;
+      border-bottom: 2px solid #dfe0e3;
+    }
+
+    .bestcontent {
+      position: relative;
+      color: #72727d;
+      font-size: larger;
+      top: -35px;
+    }
+
+    .bestimg {
+      margin-bottom: 20px;
+      margin-left: 40px;
+      margin-top: 25px;
+    }
+
+    #need {
+      display: flex;
+      /* border: 2px solid teal; */
+      text-align: center;
+      gap: 50px;
+      color: #787883;
+      padding-left: 127px;
+      margin-bottom: 40px;
+    }
+
+    #need div p {
+      padding-bottom: 6px;
+    }
+
+    /* .demo{
+        border: 2px solid red;
+      } */
+    .company {
+      border-bottom: 1px solid #dfe0e3;
+      color: #35343d;
+      font-family: sans-serif;
+      font-size: 17px;
+      margin: 0 0 20px;
+      padding: 0 80px 10px 80px;
+    }
+
+    .footend {
+      padding: 30px 0px 30px 0px;
+      background-color: #eeeeee;
+      font-size: 12px;
+      color: #95959d;
+      display: flex;
+    }
+
+    .foo{
+      margin: 0px 650px 0px 100px;
+    }
+
+    .foota {
+      color: #00bcd5;
+      text-decoration: none;
+    }
+
+    .foota:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <section>
+      <div class="head">
+        <div>
+          <img src="/image/pressure-hatao-banner-v2.jpg" class="imgtop" alt="" />
+        </div>
+        <div class="logo">
+          <img src="/image/Matrimony-Service-by-Shaadi.com.png" alt="" />
+          <span class="loginspace"><span><a href="">Login</a></span><span class="none extra"><img src="/image/help.png"
+                height="30px" style="
+                    border: 2px solid white;
+                    border-radius: 50%;
+                    margin-bottom: -7px;
+                  " /></span><span><a href="" class="none">Help</a></span></span>
+          <p class="tagline">Trusted Matrimony & Matchmaking Service</p>
+        </div>
+        <form class="form01">
+          <div>
+            I'm looking for a <br />
+            <select id="a01">
+              <option value="Man">Man</option>
+              <option value="Women">Women</option>
+            </select>
+          </div>
+          <div>
+            aged <br />
+            <select aria-placeholder="20">
+              <option value="">20</option>
+              <option value="">21</option>
+              <option value="">22</option>
+              <option value="">23</option>
+              <option value="">24</option>
+            </select>
+          </div>
+          <div>to <br /></div>
+          <div>
+            <select>
+              <option value="">20</option>
+              <option value="">21</option>
+              <option value="">22</option>
+              <option value="">23</option>
+              <option value="">24</option>
+            </select>
+          </div>
+          <div>
+            of religion <br />
+            <select>
+              <option value="">Hindu</option>
+              <option value="">Muslim</option>
+              <option value="">Christian</option>
+              <option value="">Sikh</option>
+              <option value="">Jain</option>
+            </select>
+          </div>
+          <div>
+            and mother tongue <br />
+            <select>
+              <option value="">Hindi</option>
+              <option value="">Telgu</option>
+              <option value="">English</option>
+              <option value="">Mrathi</option>
+              <option value="">Bhojpuri</option>
+            </select>
+          </div>
+          <div><button class="button01">Let's Begin</button></div>
+        </form>
+      </div>
+    </section>
+  </header>
+  <section>
+    <article>
+      <div class="body01">
+        <p class="linestop">Stop Swiping, Start Live-ing!</p>
+        <span class="span01">
+          <span><img src="/image/article01 phine img.png" height="420px" width="406.82px" alt="" /></span><span
+            class="abs arshadilogo"><img src="/image/article01shadi;logo.png" height="60px" alt="" /></span><span
+            class="bodylines02 abs">Up to 10 meetings | In 1 hour |
+            <br />
+            <span>For 5 minutes each
+              <br />
+              <br />
+              <br />
+              <span class="abs bodylines02valiable">Available on the Shaadi.com App</span>
+              <br /><img src="/image/playstore.jpg" class="playstore" alt="" />
+            </span>
+            <span class="bodylines03">______________</span>
+          </span>
+        </span>
+      </div>
+    </article>
+    <article>
+      <div class="body02">
+        <p class="linestop logofind">Find your Special Someone</p>
+        <div>
+          <span class="body02span">
+            <span class="image-container"><img src="/image/01sig.png" height="150px" class="img" alt="" />
+              <img src="/image/01signhover.png" height="150px" class="hover01" alt="" /></span><br /><br /><br />
+            <span class="logovlaue">
+              Sign Up
+              <p class="logocontent">
+                Register for free & put up your Matrimony Profile
+              </p>
+            </span>
+          </span>
+          <span class="body02span">
+            <img src="/image/02sign.png" height="150px" class="img" alt="" />
+            <img src="/image/02signhover.png" height="150px" class="hover01" alt="" /><br /><br /><br />
+            <span class="logovlaue">
+              Connect
+              <p class="logocontent">
+                Select & Connect with Matches you like
+              </p>
+            </span>
+          </span>
+          <span class="body02span">
+            <img src="/image/03sign.png" height="150px" class="img" alt="" />
+            <img src="/image/03signhover.png" height="150px" class="hover01" alt="" /><br /><br /><br />
+            <span class="logovlaue">
+              Interact
+              <p class="logocontent">
+                Become a Premium Member & Start a Conversation
+              </p>
+            </span>
+          </span>
+        </div>
+      </div>
+    </article>
+    <article>
+      <div>
+        <p class="linestop logofind">
+          Matrimony Service with Millions of Success Stories
+        </p>
+        <div class="couple">
+          <span id="arrow" class="couplemove">
+
+            <img src="/image/couple1.jpg" id="couplecenter" height="200px" alt="" />
+            <br />
+            <span class="couplename">Sanju & Pooja</span><br />
+            <span class="couplecontent">Pooja's mother called on our number one evening and then we
+              talked over phone. After sharing some photos of our families
+              over whatsapp, it turned out that our...</span>
+          </span>
+          <span>
+            <img src="/image/couple2.jpg" id="couplecenter" height="200px" alt="" />
+            <br />
+            <span class="couplename">Aakash & Riddhi</span><br />
+            <span class="couplecontent">Akash was a premium member, his parents contacted my parents.
+              Both the families exchanged biodata's and then Me and Akash
+              started chatting and</span>
+          </span>
+          <span>
+            <img src="/image/couple3.jpg" id="couplecenter" height="200px" alt="" />
+            <br />
+            <span class="couplename">Amit & Pratusha</span><br />
+            <span class="couplecontent">It's said....dnt find love...let's love find you... And that's
+              what happen with us....we clicked through Shaadi.com chatted and
+              then meet after a week. The</span>
+          </span>
+
+        </div>
+      </div>
+    </article>
+    <article>
+      <div class="started">
+        <p>Your story is waiting to happen!</p>
+        <span><button>Get Started</button></span>
+      </div>
+    </article>
+    <article id="arx">
+      <div class=" popular">
+        <p>Search by Popular Matrimony Sites</p>
+        <div id="inblok" class=" box inblok01">
+          <p class="line01 ">By Mother Tongue</p>
+          <p class="space01">__________________________</p>
+          <p>Bengali | Gujarati | Hindi | Kannada | Malayalam |</p>
+          <p>Marathi | Odia | Punjabi | Sindhi | Tamil | Telugu</p>
+        </div>
+        <div class="box">
+          <p class="line01">By Religion</p>
+          <p class="space01">__________________________</p>
+          <p> Buddhist | Christian | Jain | Muslim</p>
+        </div>
+        <div class=" box inblok02">
+          <p class="line01 ">By Community</p>
+          <p class="space01">__________________________</p>
+          <p> Adi | DravidaArya | Vysya | Brahmin | Ezhava | Iyer | </p>
+          <p>Kamma | Maratha | Nadar | Nair | Reddy | Vokkaliga |</p>
+          <p>Yadav</p>
+        </div>
+        <div class="others">
+          <p class="lineextr ">Other Matrimonials</p>
+          <p class="space01">__________________________</p>
+          <p> Agarwal | Balija | Chettiar | Defence | Elite | Iyengar</p>
+          <p>Jat | Kapu | Kayastha | Lingayat | Mudaliyar</p>
+          <p>Padmashali | Pillai | Rajput | Sourashtra | Thevar</p>
+          <p>Vanniar | Vishwakarma</p>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section>
+    <article>
+      <div class="ar2">
+
+        Download the Matrimony App
+
+        <img src="/image/playstore.jpg" height="30px" class="playstore02" alt="">
+
+      </div>
+    </article>
+  </section>
+  <section>
+    <article>
+      <article id="arx">
+        <div class=" popular">
+          <p>Our Most Popular Matrimony Apps</p>
+          <div id="inblok" class=" box inblok01">
+            <p class="line01 ">By Mother Tongue</p>
+            <p class="space01">__________________________</p>
+            <p>Bengali | Gujarati | Kannada | Malayalam |</p>
+            <p>Odia | Punjabi | Tamil | Telugu</p>
+          </div>
+          <div class="box">
+            <p class="line01">By Religion</p>
+            <p class="space01">__________________________</p>
+            <p> Buddhist | Christian | Jain | Muslim Parsi | Sikh</p>
+          </div>
+          <div class=" box inblok02">
+            <p class="line01 ">By Community</p>
+            <p class="space01">__________________________</p>
+            <p>Brahmin | Ezhava | kamma | Kapu | Maratha | Nadar</p>
+            <p> Nair | Reddy</p>
+          </div>
+
+        </div>
+      </article>
+    </article>
+  </section>
+  <section>
+    <article class="ar03">
+      <img src="/image/shadiilogo00022-removebg-preview.png" height="100px" alt="">
+      <p>Shaadi.com, India’s No.1 Matchmaking and Matrimony Service*, was founded with a simple objective - to help
+        people find happiness. Shaadi.com is a leader in what is sometimes known as the matrimony category, we have
+        touched more than 35 million lives. </p>
+      <br>
+      <p>Shaadi.com - a trusted matrimonial & matchmaking service, has always differentiated itself from other
+        matrimonials through its innovation-led approach by redefining the way Indian brides and grooms meet for
+        marriage. </p>
+      <br>
+      <p>We have also created trusted and renowned community specific matrimony platforms such as TamilShaadi.com,
+        TeluguShaadi.com, MalayaleeShaadi.com, KannadaShaadi.com, BengaliShaadi.com, GujaratiShaadi.com,
+        MarathiShaadi.com, PunjabiShaadi.com and more that has changed the way of finding a life partner. </p>
+      <br>
+      <p>Shaadi.com (sometimes mis-spelt as Shadi.com, Shadhi.com or Sadi.com) is a social networking site specialising
+        in matchmaking and not just a matrimonial service.
+      </p><br><br>
+      <p><em>* Based on the number of downloads in the last 12 months of the Shaadi.com App – as reported by AppTweak.
+        </em><br>
+        <a href="" class="learn">Learn More➡️</a>
+      </p>
+    </article>
+    <article>
+      <div class="country">
+        <div><a href="">India</a> | </div>
+        <div><a href="">USA</a> | </div>
+        <div><a href="">Canada</a> | </div>
+        <div><a href="">UK</a> | </div>
+        <div><a href="">Singapore</a> | </div>
+        <div><a href="">Australia</a> | </div>
+        <div><a href="">UAE</a> | </div>
+        <div><a href="">NRI Matrimonials</a> ➡️ </div>
+      </div>
+    </article>
+  </section>
+  <section>
+    <article>
+      <div>
+        <div class="trust">Trusted by Millions</div>
+      </div>
+
+    </article>
+  </section>
+  <footer>
+    <section>
+      <article>
+        <div class="best">
+          <img src="/image/0001best.png" height="40px" class="bestimg" alt="">
+          <span class="bestcontent">Best Matches
+          </span>
+          <img src="/image/0002profile.png" height="40px" class="bestimg" alt="">
+          <span class="bestcontent">Verified Profiles</span>
+          <img src="/image/003Privacy.png" class="bestimg" height="40px" alt="">
+          <span class="bestcontent"> 100% Privacy</span>
+        </div>
+      </article>
+    </section>
+    <section>
+      <article id="need">
+        <div class="foot1">
+          <p class="company">Need Help?</p>
+          <p>Member Login</p>
+          <p>Sign Up</p>
+          <p>Partner Search</p>
+          <p> How to Use Shaadi.com</p>
+          <p> Premium Memberships</p>
+          <p>Customer Support</p>
+          <p>Site Map</p>
+        </div>
+        <div class="foot1">
+          <p class="company">Company</p>
+          <p> About Us</p>
+          <p>Shaadi Blog</p>
+          <p>Careers</p>
+          <p>Awards & Recognition</p>
+          <p>Cov-Aid</p>
+          <p> Contact Us</p>
+        </div>
+        <div class=" foot1">
+          <p class="company">Privacy & You</p>
+          <p> Terms of Use</p>
+          <p> Privacy Policy</p>
+          <p> Be Safe Online</p>
+          <p>Report Misuse</p>
+        </div>
+        <div class="foot1">
+          <p class="company">More</p>
+          <p> VIP Shaadi</p>
+          <p> Select Shaadi</p>
+          <p>Sangam</p>
+          <p> Shaadi Centres</p>
+          <p>Success Stories</p>
+          <p>Shaadi Live</p>
+        </div>
+      </article>
+      <article>
+        <section>
+          <div class="footend">
+            <p class="foo">© 1996-2023 Shaadi.com, The World's Leading Matchmaking Service™</p>
+            <p>Passionately created by <a class="foota" href="">People Group ➤</a></p>
+          </div>
+        </section>
+      </article>
+    </section>
+  </footer>
+</body>
+
+</html>
